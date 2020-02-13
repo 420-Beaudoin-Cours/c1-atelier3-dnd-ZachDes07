@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="493.0" prefWidth="496.0">
+         <children>
+            <TextField fx:id="txfSource" layoutX="23.0" layoutY="57.0" onDragDetected="#txfSourceDragDetected" promptText="txfSource" />
+            <ImageView fx:id="poubTarget" fitHeight="86.0" fitWidth="55.0" layoutX="210.0" layoutY="14.0" onDragDropped="#poubTargetDragDropped" onDragOver="#poubTargetDragOver" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@c1-atelier3-dnd-ZachDes07/12-Litre-Inox-Poubelle-à-Pédale-Badezimmereimer.jpg" />
+               </image>
+            </ImageView>
+            <Separator layoutX="-10.0" layoutY="111.0" prefHeight="2.0" prefWidth="496.0" />
+            <TextField fx:id="txfCombo" layoutX="14.0" layoutY="129.0" onDragDetected="#txfComboDragDetected" />
+            <ComboBox fx:id="combo" layoutX="13.0" layoutY="170.0" onDragDropped="#comboDragDropped" onDragOver="#comboDragOver" prefWidth="150.0" />
+            <Separator layoutY="204.0" prefHeight="3.0" prefWidth="496.0" />
+            <TextField fx:id="txfSourceDeux" layoutX="14.0" layoutY="215.0" onDragDetected="#txfSourceDeuxDragDetected" />
+            <TextField layoutX="14.0" layoutY="249.0" onDragDetected="#txfSourceDeuxDragDetected" />
+            <TextField layoutX="14.0" layoutY="284.0" onDragDetected="#txfSourceDeuxDragDetected" />
+            <TextField layoutX="14.0" layoutY="318.0" onDragDetected="#txfSourceDeuxDragDetected" />
+            <TextField layoutX="14.0" layoutY="354.0" onDragDetected="#txfSourceDeuxDragDetected" />
+            <ImageView fx:id="poubDeux" fitHeight="153.0" fitWidth="95.0" layoutX="220.0" layoutY="222.0" onDragDropped="#poubDeuxDragDropped" onDragOver="#poubDeuxDragDropped" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@c1-atelier3-dnd-ZachDes07/12-Litre-Inox-Poubelle-à-Pédale-Badezimmereimer.jpg" />
+               </image>
+            </ImageView>
+            <Separator layoutY="395.0" prefHeight="3.0" prefWidth="496.0" />
+            <TextField layoutX="14.0" layoutY="407.0" />
+            <TextField layoutX="14.0" layoutY="449.0" />
+            <TextField layoutX="174.0" layoutY="407.0" />
+            <TextField layoutX="333.0" layoutY="407.0" />
+            <TextField layoutX="174.0" layoutY="449.0" />
+            <TextField layoutX="333.0" layoutY="449.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
